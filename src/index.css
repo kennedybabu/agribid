@@ -2,3 +2,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Poppins:wght@100;300;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#landing {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=732&q=80');
+    /* background-image: url('https://images.unsplash.com/photo-1522184216316-3c25379f9760?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'); */
+}
+
+
+.pop {
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+
+/* .overlay {
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 255, 255, 0.075);
+    top:0;
+} */
