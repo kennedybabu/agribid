@@ -34,10 +34,12 @@ const Navbar = () => {
       </div>
 
       {nav ? (
-        <div className='flex  z-40 flex-col justify-center pl-14 fixed top-0 bottom-0 right-0 w-[60%] z-4 bg-slate-400'>
-            <NavLink to='/' className='my-4'>Home</NavLink>
-            <NavLink to='/products-list' className='my-4'>Products</NavLink>
-            <NavLink className='my-4'>Account</NavLink>
+        <div className='flex  z-40 flex-col justify-center pl-14 fixed top-0 bottom-0 right-0  w-[60%] z-4 bg-[#f8f9fad7]'>
+            <div className="w-full flex h-screen flex-col">
+              <NavLink to='/' className='my-4'>Home</NavLink>
+              <NavLink to='/products-list' className='my-4'>Products</NavLink>
+              <NavLink className='my-4'>Account</NavLink>
+            </div>
         </div>
       ) : null}
     </div>
