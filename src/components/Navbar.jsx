@@ -1,8 +1,14 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <div>Navbar
+      <ul>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+          </ul>
+    </div>
   )
 }
 
