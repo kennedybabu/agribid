@@ -16,7 +16,7 @@ const Login = () => {
       alt="my zomato"
     />
   </div>
-  <div class="w-full xl:w-1/2 p-8">
+  <div class="w-full xl:w-3/4 p-4">
     <form method="post" action="#" onSubmit="return false">
       <h1 class=" text-2xl font-bold">Sign in to your account</h1>
       <div>
@@ -27,7 +27,7 @@ const Login = () => {
           Sign up
         </span>
       </div>
-      <div class="mb-4 mt-6">
+      <div class="mb-2 mt-2">
         <label
           class="block text-gray-700 text-sm font-semibold mb-2"
           htmlFor="email"
@@ -41,7 +41,7 @@ const Login = () => {
           placeholder="Your email address"
         />
       </div>
-      <div class="mb-6 mt-6">
+      <div class="mb-2 mt-2">
         <label
           class="block text-gray-700 text-sm font-semibold mb-2"
           htmlFor="password"
