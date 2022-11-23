@@ -6,6 +6,13 @@ import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
+
+  let activeStyle = {
+    textDecoration: "underline",
+  };
+
+
+  
   return (
     <div className='w-full absolute top-0 left-0 h-[60px] px-4 flex justify-between items-center'>
       <Link to='/' className='h-full flex items-center z-50'>
@@ -15,9 +22,9 @@ const Navbar = () => {
 
       {/* links */}
       <div className='hidden md:flex z-20'>
-          <NavLink className='mx-2'>Home</NavLink>
-          <NavLink className='mx-2'>Products</NavLink>
-          <NavLink className='mx-2'>Account</NavLink>
+          <NavLink  style={({ isActive }) => isActive ? activeStyle : undefined} className='mx-2 underline underline-offset-4'>Home</NavLink>
+          <NavLink  style={({ isActive }) => isActive ? activeStyle : undefined} className='mx-2 underline-offset-4'>Products</NavLink>
+          <NavLink  style={({ isActive }) => isActive ? activeStyle : undefined} className='mx-2 underline-offset-4'>Account</NavLink>
       </div>
 
 
