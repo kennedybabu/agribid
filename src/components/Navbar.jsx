@@ -22,8 +22,8 @@ const Navbar = () => {
 
       {/* links */}
       <div className='hidden md:flex z-20'>
-          <NavLink  style={({ isActive }) => isActive ? activeStyle : undefined} className='mx-2 underline underline-offset-4'>Home</NavLink>
-          <NavLink  style={({ isActive }) => isActive ? activeStyle : undefined} className='mx-2 underline-offset-4'>Products</NavLink>
+          <NavLink to='/' style={({ isActive }) => isActive ? activeStyle : undefined} className='mx-2 underline underline-offset-4'>Home</NavLink>
+          <NavLink to='/products-list' style={({ isActive }) => isActive ? activeStyle : undefined} className='mx-2 underline-offset-4'>Products</NavLink>
           <NavLink  style={({ isActive }) => isActive ? activeStyle : undefined} className='mx-2 underline-offset-4'>Account</NavLink>
       </div>
 
@@ -35,8 +35,8 @@ const Navbar = () => {
 
       {nav ? (
         <div className='flex  z-40 flex-col justify-center pl-14 fixed top-0 bottom-0 right-0 w-[60%] z-4 bg-slate-400'>
-            <NavLink className='my-4'>Home</NavLink>
-            <NavLink className='my-4'>Products</NavLink>
+            <NavLink to='/' className='my-4'>Home</NavLink>
+            <NavLink to='/products-list' className='my-4'>Products</NavLink>
             <NavLink className='my-4'>Account</NavLink>
         </div>
       ) : null}
