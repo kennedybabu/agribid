@@ -29,13 +29,13 @@ const Navbar = () => {
 
 
       {/* toggle mobile nav */}
-      <div onClick={(e) => setNav(!nav)} className='cursor-pointer md:hidden z-50'>
+      <div onClick={(e) => setNav(!nav)} className='cursor-pointer md:hidden z-50 fixed top-4 right-4'>
          {nav ? <IoMdClose /> :  <RiMenu3Fill />}
       </div>
 
       {nav ? (
         <div className='flex  z-40 flex-col justify-center pl-14 fixed top-0 bottom-0 right-0  w-[60%] z-4 bg-[#f8f9fad7]'>
-            <div className="w-full flex h-screen flex-col">
+            <div className="w-full flex justify-center h-screen flex-col">
               <NavLink to='/' className='my-4'>Home</NavLink>
               <NavLink to='/products-list' className='my-4'>Products</NavLink>
               <NavLink className='my-4'>Account</NavLink>
