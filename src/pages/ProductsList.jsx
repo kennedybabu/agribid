@@ -9,9 +9,9 @@ const ProductsList = () => {
           
       </div>
       <div className="px-4">
-        <div className='w-full px-4 flex items-center py-2 border bottom-2 my-6 rounded-[25px]'>
+        <div className='w-full md:w-[330px] px-4 flex items-center py-2 border bottom-2 my-6 rounded-[25px]'>
           <input type="text" placeholder='search' className='borderless text-sm' />     
-          <BiSearchAlt2 className='text-[#ced4da]'/>   
+          <BiSearchAlt2 className='text-[#ced4da] cursor-pointer'/>   
         </div>
         <div className='w-full flex  flex-row'>
             <div className="hidden lg:flex p-4 flex-col w-[350px] side-bar  bg-slate-100 rounded-md">
@@ -46,26 +46,28 @@ const ProductsList = () => {
                   <div className='w-full my-4'>
                       <h3 className='mb-2 font-bold'>sort by <span>Tags</span></h3>
                       <hr />
-                      <div className="w-full flex flex-wrap">
-                        <div className='border mb-1 rounded-[25px] mr-1 border-gray-400  px-1 cursor-pointer hover:bg-green-600 hover:text-white'>vegetables</div>
-                        <div className='border mb-1 rounded-[25px] mr-1 border-gray-400  px-1 cursor-pointer hover:bg-green-600 hover:text-white'>Juices</div>
-                        <div className='border mb-1 rounded-[25px] mr-1 border-gray-400  px-1 cursor-pointer hover:bg-green-600 hover:text-white'>food</div>
-                        <div className='border mb-1 rounded-[25px] mr-1 border-gray-400  px-1 cursor-pointer hover:bg-green-600 hover:text-white'>healthy</div>
-                        <div className='border mb-1 rounded-[25px] mr-1 border-gray-400  px-1 cursor-pointer hover:bg-green-600 hover:text-white'>natural</div>
+                      <div className="w-full flex flex-wrap mt-2">
+                        <small className='border mb-1 rounded-[25px] mr-1 border-gray-400  px-1 cursor-pointer hover:bg-green-600 hover:text-white'>vegetables</small>
+                        <small className='border mb-1 rounded-[25px] mr-1 border-gray-400  px-1 cursor-pointer hover:bg-green-600 hover:text-white'>Juices</small>
+                        <small className='border mb-1 rounded-[25px] mr-1 border-gray-400  px-1 cursor-pointer hover:bg-green-600 hover:text-white'>food</small>
+                        <small className='border mb-1 rounded-[25px] mr-1 border-gray-400  px-1 cursor-pointer hover:bg-green-600 hover:text-white'>healthy</small>
+                        <small className='border mb-1 rounded-[25px] mr-1 border-gray-400  px-1 cursor-pointer hover:bg-green-600 hover:text-white'>natural</small>
                       </div>
                   </div>
                 </div>          
             </div>           
             <div className='bg-slate-100 w-full mx-4'>
-              <div className="h-full py-2 px-2 w-full flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4">
+              <div className="h-full py-2 px-2 w-full flex flex-col md:grid md:grid-cols-3 lg:grid-cols-4">
                   <div className="product mt-2 w-[220px] mx-auto shadow-md rounded-md h-[300px] bg-slate-400 flex flex-col items-center justify-center">
                       <p>card</p>
                   </div>
                   <div className="product  my-2 w-[220px] mx-auto shadow-md rounded-md h-[300px] bg-slate-400 flex flex-col items-center justify-center">
                       <p>card</p>
-                  </div><div className="product my-2 w-[220px] mx-auto shadow-md rounded-md h-[300px] bg-slate-400 flex flex-col items-center justify-center">
+                  </div>
+                  <div className="product my-2 w-[220px] mx-auto shadow-md rounded-md h-[300px] bg-slate-400 flex flex-col items-center justify-center">
                       <p>card</p>
-                  </div><div className="product  my-2 w-[220px] mx-auto shadow-md rounded-md h-[300px] bg-slate-400 flex flex-col items-center justify-center">
+                  </div>
+                  <div className="product  my-2 w-[220px] mx-auto shadow-md rounded-md h-[300px] bg-slate-400 flex flex-col items-center justify-center">
                       <p>card</p>
                   </div>
               </div>
