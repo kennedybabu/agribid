@@ -32,6 +32,6 @@ onAuthStateChanged(auth, (user) => {
     if (user) {
         uid = user.uid
     } else {
-        // User is signed out.
+        //The user is signed out.
     }
 })
