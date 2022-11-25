@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import AccountModal from '../components/AccountModal'
 const Account = () => {
   return (
     <div>
@@ -97,7 +98,7 @@ const Account = () => {
                     </div>
                     <button
                         class="block w-full text-blue-800 text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 my-4">
-                        Update profile</button>
+                        <AccountModal/></button>
                 </div>
        
 
@@ -107,6 +108,7 @@ const Account = () => {
     </div>
 </div>
 </Wrapper>
+
 </div>
 
 

@@ -5,6 +5,7 @@ const Navbar = () => {
   return (
     <div>Navbar
       <Link to="/account">Account</Link>
+     
     </div>
   )
 }
