@@ -4,6 +4,7 @@ import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
 import { useState } from "react";
+import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 
 export default function AccountModal() {
   const [startDate, setStartDate] = useState(new Date());
@@ -80,15 +81,23 @@ export default function AccountModal() {
         
 
       
-<div class="relative">
+
 <DatePicker
       closeOnScroll={(e) => e.target === document}
       selected={startDate}
       onChange={(date) => setStartDate(date)}
     />
-</div>
+
 
             </div>
+            <div class="relative z-0 mb-6 w-full group">
+          
+        
+            <GooglePlacesAutocomplete
+      apiKey={process.env.REACT_APP_GOOGLE_API_KEY}
+    />
+    </div>
+         
     <div class="relative z-0 mb-6 w-full group">
         
 
