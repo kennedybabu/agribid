@@ -16,14 +16,14 @@ const Account = () => {
   
             <div class="w-full md:w-3/12 md:mx-4 ">
                 
-                <div class="bg-white p-3 border-t-4 border-green-400">
+                <div class="bg-white p-3 border-green-400 ">
                     <div class="image overflow-hidden">
-                        <img class="h-auto w-full mx-auto"
+                        <img class="h-auto w-full mx-auto rounded-lg"
                             src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                             alt=""></img>
                     </div>
-                    <h1 class="text-gray-900 font-bold text-xl leading-8 my-1">Jane Doe</h1>
-                    <h3 class="text-gray-600 font-md text-semibold leading-4">Farmer</h3>
+                    <h1 class="text-gray-900 font-semibold text-xl leading-10 my-1">Jane Doe</h1>
+                    <h3 class="text-gray-600 font-md text-semibold leading-4"><span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-900">Buyer</span></h3>
                     <p class="text-sm text-gray-500 hover:text-gray-600 leading-6">Lorem ipsum dolor sit amet
                         consectetur adipisicing elit.
                         Reprehenderit, eligendi dolorum sequi illum qui unde aspernatur non deserunt</p>
